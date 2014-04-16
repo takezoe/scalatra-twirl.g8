@@ -11,6 +11,6 @@ Clone this repository and overwrite organization and name in `project/build.scal
 
 * scalatra 2.2.2
 * twirl 0.7.0
-* slick 1.0.1
+* slick 2.0.1
 * scalatra-forms 0.0.14
 * sbt 0.13.1
