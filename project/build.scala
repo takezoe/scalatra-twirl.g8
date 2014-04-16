@@ -31,7 +31,7 @@ object MyBuild extends Build {
         "org.scalatra" %% "scalatra-json" % ScalatraVersion,
         "org.json4s" %% "json4s-jackson" % "3.2.5",
         "jp.sf.amateras" %% "scalatra-forms" % "0.0.14",
-        "com.typesafe.slick" %% "slick" % "1.0.1",
+        "com.typesafe.slick" %% "slick" % "2.0.1",
         "org.eclipse.jetty" % "jetty-webapp" % "8.1.8.v20121106" % "container;provided",
         "org.eclipse.jetty.orbit" % "javax.servlet" % "3.0.0.v201112011016" % "container;provided;test" artifacts Artifact("javax.servlet", "jar", "jar")
       ),
