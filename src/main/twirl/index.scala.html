@@ -1,11 +1,9 @@
 @()
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hello Scalatra!</title>
-  </head>
-  <body>
-    <h1>Hello Scalatra!</h1>
-  </body>
-</html>
+@main {
+  <form method="POST" action="/hello" validate="true">
+    Name: <input type="name" type="text" name="name">
+    <span class="error" id="error-name"></span>
+    <br/>
+    <input type="submit" value="Click"/>
+  </form>
+}
