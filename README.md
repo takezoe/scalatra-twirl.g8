@@ -5,7 +5,7 @@ Template project for Scalatra based web application.
 
 ##Usage
 
-Clone this repository and overwrite organization and name in `project/build.scala` and hit the command below:
+Clone this repository and overwrite organization and name in `build.sbt` and hit the command below:
 
 ```
 ./sbt.sh ~container:start
