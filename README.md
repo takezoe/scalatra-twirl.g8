@@ -8,7 +8,7 @@ Template project for Scalatra based web application.
 Clone this repository and overwrite organization and name in `build.sbt` and hit the command below:
 
 ```
-./sbt.sh ~container:start
+./sbt.sh ~jetty:start
 ```
 
 ##Components
