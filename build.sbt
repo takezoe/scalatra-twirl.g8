@@ -25,8 +25,7 @@ lazy val project = Project (
       "org.scalatra"        %% "scalatra-json"     % ScalatraVersion,
       "org.json4s"          %% "json4s-jackson"    % "3.5.0",
       "io.github.gitbucket" %% "scalatra-forms"    % "1.1.0",
-      // Scala 2.12 version of Slick hasn't been released yet.
-      //"com.typesafe.slick"  %% "slick"             % "3.1.1",
+      "com.typesafe.slick"  %% "slick"             % "3.2.0-M2",
       "org.eclipse.jetty"    % "jetty-webapp"      % JettyVersion    % "provided",
       "javax.servlet"        % "javax.servlet-api" % "3.1.0"         % "provided"
     ),
