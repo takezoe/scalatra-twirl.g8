@@ -16,6 +16,6 @@ Clone this repository and overwrite organization and name in `build.sbt` and hit
 * Scala 2.12.0
 * scalatra 2.5.0
 * twirl 1.3.0
-* slick 3.1.1
+* slick 3.2.0-M2
 * scalatra-forms 1.1.0
 * sbt 0.13.13
