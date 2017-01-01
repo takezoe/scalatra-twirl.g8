@@ -1,35 +1,32 @@
 import org.scalatra.sbt._
 
-lazy val Organization = "organization"
-lazy val Name = "name"
-lazy val Version = "0.0.1"
-lazy val ScalaVersion = "2.12.0"
-lazy val ScalatraVersion = "2.5.0"
-lazy val JettyVersion = "9.3.9.v20160517"
+organization := "organization"
 
-lazy val project = Project (
-  Name,
-  file(".")
+name := "name"
+
+version := "0.0.1"
+
+scalaVersion := "2.12.1"
+
+scalacOptions := Seq("-deprecation", "-language:postfixOps")
+
+libraryDependencies ++= Seq(
+  "org.scalatra"        %% "scalatra"          % "2.5.0",
+  "org.scalatra"        %% "scalatra-specs2"   % "2.5.0" % "test",
+  "org.scalatra"        %% "scalatra-json"     % "2.5.0",
+  "org.json4s"          %% "json4s-jackson"    % "3.5.0",
+  "io.github.gitbucket" %% "scalatra-forms"    % "1.1.0",
+  "com.typesafe.slick"  %% "slick"             % "3.2.0-M2",
+  "org.eclipse.jetty"    % "jetty-webapp"      % "9.3.9.v20160517" % "provided",
+  "javax.servlet"        % "javax.servlet-api" % "3.1.0" % "provided"
 )
-.settings(ScalatraPlugin.scalatraWithJRebel: _*)
-.settings(
-    sourcesInBase := false,
-    organization := Organization,
-    name := Name,
-    version := Version,
-    scalaVersion := ScalaVersion,
-    scalacOptions := Seq("-deprecation", "-language:postfixOps"),
-    libraryDependencies ++= Seq(
-      "org.scalatra"        %% "scalatra"          % ScalatraVersion,
-      "org.scalatra"        %% "scalatra-specs2"   % ScalatraVersion % "test",
-      "org.scalatra"        %% "scalatra-json"     % ScalatraVersion,
-      "org.json4s"          %% "json4s-jackson"    % "3.5.0",
-      "io.github.gitbucket" %% "scalatra-forms"    % "1.1.0",
-      "com.typesafe.slick"  %% "slick"             % "3.2.0-M2",
-      "org.eclipse.jetty"    % "jetty-webapp"      % JettyVersion    % "provided",
-      "javax.servlet"        % "javax.servlet-api" % "3.1.0"         % "provided"
-    ),
-    javacOptions in compile ++= Seq("-target", "8", "-source", "8"),
-    testOptions in Test += Tests.Argument(TestFrameworks.Specs2, "junitxml", "console"),
-    packageOptions += Package.MainClass("JettyLauncher")
-).enablePlugins(SbtTwirl, JettyPlugin)
+
+javacOptions in compile ++= Seq("-target", "8", "-source", "8")
+
+testOptions in Test += Tests.Argument(TestFrameworks.Specs2, "junitxml", "console")
+
+packageOptions += Package.MainClass("JettyLauncher")
+
+ScalatraPlugin.scalatraWithJRebel
+
+enablePlugins(SbtTwirl, JettyPlugin)
