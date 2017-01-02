@@ -13,6 +13,8 @@ $ cd <name-of-app>
 $ sbt ~jetty:start
 ```
 
+Then open http://localhost:8080/ in your browser.
+
 ## Components
 
 * Scala 2.12.1
