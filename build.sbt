@@ -16,7 +16,6 @@ libraryDependencies ++= Seq(
   "org.scalatra"        %% "scalatra-json"     % "$scalatra_version$",
   "org.json4s"          %% "json4s-jackson"    % "3.5.0",
   "io.github.gitbucket" %% "scalatra-forms"    % "1.1.0",
-  "com.typesafe.slick"  %% "slick"             % "3.2.0-M2",
   "org.eclipse.jetty"    % "jetty-webapp"      % "9.3.9.v20160517" % "provided",
   "javax.servlet"        % "javax.servlet-api" % "3.1.0" % "provided"
 )

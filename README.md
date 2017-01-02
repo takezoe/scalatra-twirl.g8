@@ -1,7 +1,7 @@
-scalatra-template
+scalatra-twirl.g8
 =================
 
-Template project for Scalatra, Twirl and Slick based web applications.
+Template project for Scalatra and Twirl based web applications.
 
 ## Usage
 
@@ -20,5 +20,4 @@ Then open http://localhost:8080/ in your browser.
 * Scala 2.12.1
 * scalatra 2.5.0
 * twirl 1.3.0
-* slick 3.2.0-M2
 * scalatra-forms 1.1.0
