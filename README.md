@@ -8,7 +8,7 @@ Template project for Scalatra, Twirl and Slick based web applications.
 You can create and run a project as following:
 
 ```
-$ sbt new takezoe/scalatra-twirl-slick
+$ sbt new takezoe/scalatra-twirl-slick.g8
 $ cd <name-of-app>
 $ sbt ~jetty:start
 ```
