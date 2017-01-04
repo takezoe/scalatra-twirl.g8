@@ -1,7 +1,7 @@
 scalatra-twirl.g8
 =================
 
-Template project for Scalatra and Twirl based web applications.
+giter8 template for web applications based on Scalatra with Twirl template
 
 ## Usage
 
