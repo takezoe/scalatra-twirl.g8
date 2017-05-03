@@ -8,7 +8,7 @@ giter8 template for web applications based on Scalatra with Twirl template
 You can create and run a project as following:
 
 ```
-$ sbt new takezoe/scalatra-twirl-slick.g8
+$ sbt new takezoe/scalatra-twirl.g8
 $ cd <name-of-app>
 $ sbt ~jetty:start
 ```
